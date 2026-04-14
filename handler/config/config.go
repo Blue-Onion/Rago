@@ -15,7 +15,7 @@ func LoadConfig() *Config {
 	godotenv.Load()
 	dbUrl := os.Getenv("DBURL")
 	port := os.Getenv("PORT")
-	JWTSecert := os.Getenv("PORT")
+	JWTSecert := os.Getenv("JWTSECERT")
 	config := &Config{
 		DbUrl:     dbUrl,
 		Port:      port,
